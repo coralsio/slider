@@ -3,8 +3,8 @@
 namespace Corals\Modules\Slider\Policies;
 
 use Corals\Foundation\Policies\BasePolicy;
-use Corals\User\Models\User;
 use Corals\Modules\Slider\Models\Slider;
+use Corals\User\Models\User;
 
 class SliderPolicy extends BasePolicy
 {
@@ -19,6 +19,7 @@ class SliderPolicy extends BasePolicy
         if ($user->can('CMS::slider.view')) {
             return true;
         }
+
         return false;
     }
 
@@ -41,6 +42,7 @@ class SliderPolicy extends BasePolicy
         if ($user->can('CMS::slider.update')) {
             return true;
         }
+
         return false;
     }
 
@@ -54,6 +56,7 @@ class SliderPolicy extends BasePolicy
         if ($user->can('CMS::slider.delete')) {
             return true;
         }
+
         return false;
     }
 }

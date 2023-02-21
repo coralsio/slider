@@ -27,7 +27,7 @@ class SlideTransformer extends BaseTransformer
             'status' => formatStatusAsLabels($slide->status),
             'created_at' => format_date($slide->created_at),
             'updated_at' => format_date($slide->updated_at),
-            'action' => $this->actions($slide)
+            'action' => $this->actions($slide),
         ];
 
         return parent::transformResponse($transformedArray);

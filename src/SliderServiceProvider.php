@@ -20,7 +20,6 @@ class SliderServiceProvider extends ServiceProvider
      *
      * @return void
      */
-
     public function boot()
     {
         // Load view
@@ -50,7 +49,6 @@ class SliderServiceProvider extends ServiceProvider
         $this->app->register(SliderRouteServiceProvider::class);
         $this->app->register(SliderAuthServiceProvider::class);
         $this->app->register(SliderObserverServiceProvider::class);
-
     }
 
     public function registerShortcode()

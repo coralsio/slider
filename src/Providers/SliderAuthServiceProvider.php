@@ -2,7 +2,6 @@
 
 namespace Corals\Modules\Slider\Providers;
 
-
 use Corals\Modules\Slider\Models\Slide;
 use Corals\Modules\Slider\Models\Slider;
 use Corals\Modules\Slider\Policies\SlidePolicy;

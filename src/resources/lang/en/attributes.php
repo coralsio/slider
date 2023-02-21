@@ -16,6 +16,6 @@ return [
         'content' => 'Content',
         'content_image' => 'Upload an image here',
         'link' => 'Place a link here',
-        'content_video' => 'Upload a video here'
+        'content_video' => 'Upload a video here',
     ],
 ];

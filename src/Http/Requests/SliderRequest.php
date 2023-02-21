@@ -39,7 +39,7 @@ class SliderRequest extends BaseRequest
 
         if ($this->isStore()) {
             $rules = array_merge($rules, [
-                'key' => 'required|max:191|unique:sliders,key'
+                'key' => 'required|max:191|unique:sliders,key',
             ]);
         }
 

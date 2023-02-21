@@ -15,9 +15,9 @@ class SliderOptionsDatabaseSeeder extends Seeder
     {
         \DB::table('slider_options')->delete();
 
-        \DB::table('slider_options')->insert(array(
+        \DB::table('slider_options')->insert([
             0 =>
-                array(
+                [
                     'id' => 1,
                     'key' => 'items',
                     'default' => '1',
@@ -26,12 +26,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'The number of items you want to see on the screen.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             1 =>
-                array(
+                [
                     'id' => 2,
                     'key' => 'margin',
                     'default' => '0',
@@ -40,12 +40,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'margin-right(px) on item.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             2 =>
-                array(
+                [
                     'id' => 3,
                     'key' => 'loop',
                     'default' => 'false',
@@ -54,12 +54,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Infinity loop. Duplicate last and first items to get loop illusion.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             3 =>
-                array(
+                [
                     'id' => 4,
                     'key' => 'center',
                     'default' => 'false',
@@ -68,12 +68,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Center item. Works well with even an odd number of items.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             4 =>
-                array(
+                [
                     'id' => 5,
                     'key' => 'mouseDrag',
                     'default' => 'true',
@@ -82,12 +82,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Mouse drag enabled.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             5 =>
-                array(
+                [
                     'id' => 6,
                     'key' => 'touchDrag',
                     'default' => 'true',
@@ -96,12 +96,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Touch drag enabled.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             6 =>
-                array(
+                [
                     'id' => 7,
                     'key' => 'pullDrag',
                     'default' => 'true',
@@ -110,12 +110,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Stage pull to edge.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             7 =>
-                array(
+                [
                     'id' => 8,
                     'key' => 'freeDrag',
                     'default' => 'false',
@@ -124,12 +124,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Item pull to edge.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             8 =>
-                array(
+                [
                     'id' => 9,
                     'key' => 'stagePadding',
                     'default' => '0',
@@ -138,12 +138,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Padding left and right on stage (can see neighbours).',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             9 =>
-                array(
+                [
                     'id' => 10,
                     'key' => 'merge',
                     'default' => 'false',
@@ -154,12 +154,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
 ',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             10 =>
-                array(
+                [
                     'id' => 11,
                     'key' => 'mergeFit',
                     'default' => 'true',
@@ -168,12 +168,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Fit merged items if screen is smaller than items value.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             11 =>
-                array(
+                [
                     'id' => 12,
                     'key' => 'autoWidth',
                     'default' => 'false',
@@ -182,12 +182,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Set non grid content. Try using width style on divs.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             12 =>
-                array(
+                [
                     'id' => 13,
                     'key' => 'startPosition',
                     'default' => '0',
@@ -198,12 +198,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
 ',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             13 =>
-                array(
+                [
                     'id' => 14,
                     'key' => 'URLhashListener',
                     'default' => 'false',
@@ -212,12 +212,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Listen to url hash changes. data-hash on items is required.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             14 =>
-                array(
+                [
                     'id' => 15,
                     'key' => 'nav',
                     'default' => 'false',
@@ -226,12 +226,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Show next/prev buttons.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             15 =>
-                array(
+                [
                     'id' => 16,
                     'key' => 'rewind',
                     'default' => 'true',
@@ -240,12 +240,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Go backwards when the boundary has reached.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             16 =>
-                array(
+                [
                     'id' => 17,
                     'key' => 'navText',
                     'default' => '[\'next\',\'prev\']',
@@ -254,12 +254,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'HTML allowed.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             17 =>
-                array(
+                [
                     'id' => 18,
                     'key' => 'navElement',
                     'default' => 'div',
@@ -268,12 +268,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'DOM element type for a single directional navigation link.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             18 =>
-                array(
+                [
                     'id' => 19,
                     'key' => 'slideBy',
                     'default' => '1',
@@ -282,12 +282,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Navigation slide by x. \'page\' string can be set to slide by page.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             19 =>
-                array(
+                [
                     'id' => 20,
                     'key' => 'dots',
                     'default' => 'true',
@@ -296,12 +296,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Show dots navigation.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             20 =>
-                array(
+                [
                     'id' => 21,
                     'key' => 'dotsEach',
                     'default' => 'false',
@@ -310,12 +310,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Show dots each x item.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             21 =>
-                array(
+                [
                     'id' => 22,
                     'key' => 'dotData',
                     'default' => 'false',
@@ -324,12 +324,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Used by data-dot content.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             22 =>
-                array(
+                [
                     'id' => 23,
                     'key' => 'lazyLoad',
                     'default' => 'true',
@@ -338,12 +338,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Lazy load images. data-src and data-src-retina for highres. Also load images into background inline style if element is not <img>',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             23 =>
-                array(
+                [
                     'id' => 24,
                     'key' => 'lazyContent',
                     'default' => 'true',
@@ -352,12 +352,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'lazyContent was introduced during beta tests but i removed it from the final release due to bad implementation. It is a nice options so i will work on it in the nearest feature.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             24 =>
-                array(
+                [
                     'id' => 25,
                     'key' => 'autoplay',
                     'default' => 'false',
@@ -366,12 +366,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Autoplay.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             25 =>
-                array(
+                [
                     'id' => 26,
                     'key' => 'autoplayTimeout',
                     'default' => '5000',
@@ -382,12 +382,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
 ',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             26 =>
-                array(
+                [
                     'id' => 27,
                     'key' => 'autoplayHoverPause',
                     'default' => 'false',
@@ -396,12 +396,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Pause on mouse hover.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             27 =>
-                array(
+                [
                     'id' => 28,
                     'key' => 'smartSpeed',
                     'default' => '250',
@@ -410,12 +410,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Speed Calculate. More info to come..',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             28 =>
-                array(
+                [
                     'id' => 29,
                     'key' => 'autoplaySpeed',
                     'default' => 'false',
@@ -424,12 +424,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'autoplay speed.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             29 =>
-                array(
+                [
                     'id' => 30,
                     'key' => 'navSpeed',
                     'default' => 'false',
@@ -438,12 +438,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Navigation speed.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             30 =>
-                array(
+                [
                     'id' => 31,
                     'key' => 'dotsSpeed',
                     'default' => 'false',
@@ -452,12 +452,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Pagination speed.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             31 =>
-                array(
+                [
                     'id' => 32,
                     'key' => 'fluidSpeed',
                     'default' => 'false',
@@ -466,12 +466,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Speed Calculate. More info to come..',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             32 =>
-                array(
+                [
                     'id' => 33,
                     'key' => 'dragEndSpeed',
                     'default' => 'false',
@@ -480,12 +480,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Drag end speed.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             33 =>
-                array(
+                [
                     'id' => 34,
                     'key' => 'callbacks',
                     'default' => 'true',
@@ -494,12 +494,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Enable callback events.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             34 =>
-                array(
+                [
                     'id' => 35,
                     'key' => 'responsive',
                     'default' => 'false',
@@ -508,12 +508,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Object containing responsive options. Can be set to false to remove responsive capabilities.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             35 =>
-                array(
+                [
                     'id' => 36,
                     'key' => 'responsiveRefreshRate',
                     'default' => '200',
@@ -522,12 +522,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Responsive refresh rate.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             36 =>
-                array(
+                [
                     'id' => 37,
                     'key' => 'responsiveBaseElement',
                     'default' => 'window',
@@ -536,12 +536,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Set on any DOM element. If you care about non responsive browser (like ie8) then use it on main wrapper. This will prevent from crazy resizing.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             37 =>
-                array(
+                [
                     'id' => 38,
                     'key' => 'video',
                     'default' => 'false',
@@ -550,12 +550,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Enable fetching YouTube/Vimeo/Vzaar videos.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             38 =>
-                array(
+                [
                     'id' => 39,
                     'key' => 'videoHeight',
                     'default' => 'false',
@@ -564,12 +564,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Set height for videos.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             39 =>
-                array(
+                [
                     'id' => 40,
                     'key' => 'videoWidth',
                     'default' => 'false',
@@ -578,12 +578,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => '',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             40 =>
-                array(
+                [
                     'id' => 41,
                     'key' => 'animateOut',
                     'default' => 'false',
@@ -592,12 +592,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Class for CSS3 animation out.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             41 =>
-                array(
+                [
                     'id' => 42,
                     'key' => 'animateIn',
                     'default' => 'false',
@@ -606,12 +606,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Class for CSS3 animation in.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 0,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             42 =>
-                array(
+                [
                     'id' => 43,
                     'key' => 'fallbackEasing',
                     'default' => 'swing',
@@ -620,12 +620,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Easing for CSS2 $.animate.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             43 =>
-                array(
+                [
                     'id' => 44,
                     'key' => 'info',
                     'default' => 'false',
@@ -634,12 +634,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Callback to retrieve basic information (current item/pages/widths). Info function second parameter is Owl DOM object reference.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             44 =>
-                array(
+                [
                     'id' => 45,
                     'key' => 'nestedItemSelector',
                     'default' => 'false',
@@ -648,12 +648,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Use it if owl items are deep nested inside some generated content. E.g \'youritem\'. Dont use dot before class name.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             45 =>
-                array(
+                [
                     'id' => 46,
                     'key' => 'itemElement',
                     'default' => 'div',
@@ -662,12 +662,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'DOM element type for owl-item.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             46 =>
-                array(
+                [
                     'id' => 47,
                     'key' => 'stageElement',
                     'default' => 'div',
@@ -676,12 +676,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'DOM element type for owl-stage.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             47 =>
-                array(
+                [
                     'id' => 48,
                     'key' => 'navContainer',
                     'default' => 'false',
@@ -690,12 +690,12 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Set your own container for nav.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
             48 =>
-                array(
+                [
                     'id' => 49,
                     'key' => 'dotsContainer',
                     'default' => 'false',
@@ -704,10 +704,10 @@ class SliderOptionsDatabaseSeeder extends Seeder
                     'description' => 'Set your own container for nav.',
                     'slider_type' => 'OwlCarousel2',
                     'hidden' => 1,
-                    'deleted_at' => NULL,
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
-        ));
+                    'deleted_at' => null,
+                    'created_at' => null,
+                    'updated_at' => null,
+                ],
+        ]);
     }
 }

@@ -9,5 +9,5 @@ return [
         'title' => 'Slides',
         'title_singular' => 'Slide',
         'slide_name' => '[:slider] Slides',
-    ]
+    ],
 ];

@@ -29,13 +29,15 @@ class SlidersTest extends TestCase
         $types = ['images' => 'Images', 'videos' => 'Videos', 'html' => 'Html'];
         $type = array_rand($types);
         $key = uniqid('slider-');
-        $response = $this->post('slider/sliders', [
+        $response = $this->post(
+            'slider/sliders',
+            [
                 'key' => $key,
                 'name' => 'slider',
                 'type' => $type,
                 'status' => 'active',
                 "init_options" => [
-                ]
+                ],
             ]
         );
 

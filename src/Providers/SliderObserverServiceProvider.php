@@ -2,7 +2,6 @@
 
 namespace Corals\Modules\Slider\Providers;
 
-
 use Corals\Modules\Slider\Models\Slide;
 use Corals\Modules\Slider\Models\Slider;
 use Corals\Modules\Slider\Observers\SlideObserver;
@@ -16,7 +15,6 @@ class SliderObserverServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
         Slider::observe(SliderObserver::class);
         Slide::observe(SlideObserver::class);
     }

@@ -33,7 +33,7 @@ class SlidesController extends BaseController
      */
     public function index(SlideRequest $request, Slider $slider, SlidesDataTable $dataTable)
     {
-        $this->setViewSharedData(['title' => trans('Slider::labels.slide.index_title',['slider' => $slider->name , 'slide' => $this->title])]);
+        $this->setViewSharedData(['title' => trans('Slider::labels.slide.index_title', ['slider' => $slider->name , 'slide' => $this->title])]);
 
         return $dataTable->setResourceUrl($this->resource_url)->render('Slider::slides.index', compact('slider'));
     }
@@ -94,6 +94,7 @@ class SlidesController extends BaseController
     {
         $this->setViewSharedData(['title_singular' => trans('Corals::labels.show_title', ['title' => $slide->name])]);
         $this->setViewSharedData(['edit_url' => $this->resource_url . '/' . $slide->hashed_id . '/edit']);
+
         return view('Slider::slides.show')->with(compact('slide', 'slider'));
     }
 

@@ -32,7 +32,7 @@ class SliderTransformer extends BaseTransformer
             'created_at' => format_date($slider->created_at),
             'updated_at' => format_date($slider->updated_at),
             'short_code' => $this->getShortcode($slider),
-            'action' => $this->actions($slider)
+            'action' => $this->actions($slider),
         ];
 
         return parent::transformResponse($transformedArray);

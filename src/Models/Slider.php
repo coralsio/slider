@@ -8,7 +8,8 @@ use Spatie\Activitylog\Traits\LogsActivity;
 
 class Slider extends BaseModel
 {
-    use PresentableTrait, LogsActivity;
+    use PresentableTrait;
+    use LogsActivity;
 
     /**
      *  Model configuration.
@@ -17,7 +18,7 @@ class Slider extends BaseModel
     public $config = 'slider.models.slider';
 
     protected $casts = [
-        'init_options' => 'array'
+        'init_options' => 'array',
     ];
 
     protected $guarded = ['id'];

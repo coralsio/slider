@@ -9,5 +9,5 @@ return [
         'title' => 'الشرائح',
         'title_singular' => 'شريحة',
         'slide_name' => '[:slider] الشرائح',
-    ]
+    ],
 ];

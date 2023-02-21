@@ -26,7 +26,7 @@ Breadcrumbs::register('slider_show', function ($breadcrumbs) {
 //Slides
 Breadcrumbs::register('slides', function ($breadcrumbs, $slider) {
     $breadcrumbs->parent('sliders');
-    $breadcrumbs->push(trans('Slider::module.slide.slide_name',['slider' => $slider->name]), route(config('slider.models.slide.resource_route'), ['slider' => $slider->hashed_id]));
+    $breadcrumbs->push(trans('Slider::module.slide.slide_name', ['slider' => $slider->name]), route(config('slider.models.slide.resource_route'), ['slider' => $slider->hashed_id]));
 });
 
 Breadcrumbs::register('slide_create_edit', function ($breadcrumbs, $slider) {

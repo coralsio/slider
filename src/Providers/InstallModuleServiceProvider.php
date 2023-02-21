@@ -9,7 +9,7 @@ use Corals\Modules\Slider\database\seeds\SliderDatabaseSeeder;
 class InstallModuleServiceProvider extends BaseInstallModuleServiceProvider
 {
     protected $migrations = [
-        SliderTables::class
+        SliderTables::class,
     ];
 
     protected function providerBooted()
