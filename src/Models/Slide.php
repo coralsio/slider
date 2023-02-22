@@ -5,12 +5,14 @@ namespace Corals\Modules\Slider\Models;
 use Corals\Foundation\Models\BaseModel;
 use Corals\Foundation\Transformers\PresentableTrait;
 use Spatie\Activitylog\Traits\LogsActivity;
-use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
 class Slide extends BaseModel implements HasMedia
 {
-    use PresentableTrait, LogsActivity, InteractsWithMedia ;
+    use PresentableTrait;
+    use LogsActivity;
+    use InteractsWithMedia ;
 
     /**
      *  Model configuration.

@@ -6,7 +6,6 @@ use Corals\Foundation\Transformers\FractalPresenter;
 
 class SlidePresenter extends FractalPresenter
 {
-
     /**
      * @param array $extras
      * @return SlideTransformer|\League\Fractal\TransformerAbstract

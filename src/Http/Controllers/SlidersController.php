@@ -81,8 +81,9 @@ class SlidersController extends BaseController
      */
     public function show(SliderRequest $request, Slider $slider)
     {
-        $this->setViewSharedData(['title_singular' =>trans('Corals::labels.show_title', ['title' => $slider->name])]);
+        $this->setViewSharedData(['title_singular' => trans('Corals::labels.show_title', ['title' => $slider->name])]);
         $this->setViewSharedData(['edit_url' => $this->resource_url . '/' . $slider->hashed_id . '/edit']);
+
         return view('Slider::sliders.show')->with(compact('slider'));
     }
 

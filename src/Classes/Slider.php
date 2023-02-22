@@ -9,17 +9,15 @@ class Slider
     /**
      * FooBar constructor.
      */
-    function __construct()
+    public function __construct()
     {
     }
 
-
     public function getSliderDefaultOptions($hidden = null)
     {
-
         $options = SliderOptions::whereNotNull('id');
 
-        if (!is_null($hidden)) {
+        if (! is_null($hidden)) {
             $options = $options->where('hidden', $hidden);
         }
 

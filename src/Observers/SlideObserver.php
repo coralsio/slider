@@ -6,7 +6,6 @@ use Corals\Modules\Slider\Models\Slide;
 
 class SlideObserver
 {
-
     /**
      * @param Slide $slide
      */

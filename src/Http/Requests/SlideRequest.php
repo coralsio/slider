@@ -35,12 +35,15 @@ class SlideRequest extends BaseRequest
             switch ($slider->type) {
                 case 'html':
                     $rules['content'] = 'required';
+
                     break;
                 case 'videos':
                     $rules['content'] = 'required_without:link|mimes:mp4,m4p,m4v,webm,ogg,mpg,mp2,mpeg,mpe,mpv';
+
                     break;
                 case 'images':
                     $rules['content'] = 'required_without:link|image';
+
                     break;
             }
 
@@ -72,12 +75,15 @@ class SlideRequest extends BaseRequest
         switch ($slider->type) {
             case 'html':
                 $attributes['content'] = 'content';
+
                 break;
             case 'videos':
                 $attributes['content'] = 'video';
+
                 break;
             case 'images':
                 $attributes['content'] = 'image';
+
                 break;
         }
 

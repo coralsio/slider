@@ -30,7 +30,7 @@ class SlidesDataTable extends BaseDataTable
     public function query(Slide $model)
     {
         $slider = $this->request->route('slider');
-        if (!$slider) {
+        if (! $slider) {
             abort('404');
         }
 

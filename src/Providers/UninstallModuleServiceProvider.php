@@ -10,7 +10,7 @@ use Corals\User\Models\Permission;
 class UninstallModuleServiceProvider extends BaseUninstallModuleServiceProvider
 {
     protected $migrations = [
-        SliderTables::class
+        SliderTables::class,
     ];
 
     protected function providerBooted()

@@ -30,13 +30,15 @@ class SlidesTest extends TestCase
     {
         $type = 'html';
         $key = uniqid('slider-');
-        $response = $this->post('slider/sliders', [
+        $response = $this->post(
+            'slider/sliders',
+            [
                 'key' => $key,
                 'name' => 'slider',
                 'type' => $type,
                 'status' => 'active',
                 "init_options" => [
-                ]
+                ],
             ]
         );
 
@@ -56,10 +58,12 @@ class SlidesTest extends TestCase
         $this->test_sliders_store();
 
         if ($this->slider) {
-            $response = $this->post('slider/sliders/' . $this->slider->hashed_id . '/slides', [
+            $response = $this->post(
+                'slider/sliders/' . $this->slider->hashed_id . '/slides',
+                [
                     'name' => 'slide',
                     'status' => 'active',
-                    'content' => 'html'
+                    'content' => 'html',
                 ]
             );
 
@@ -70,7 +74,7 @@ class SlidesTest extends TestCase
 
             $this->assertDatabaseHas('slides', [
                 'name' => $this->slide->name,
-                'slider_id' => $this->slide->slider_id
+                'slider_id' => $this->slide->slider_id,
             ]);
         }
         $this->assertTrue(true);
@@ -132,7 +136,7 @@ class SlidesTest extends TestCase
             $response = $this->put('slider/sliders/' . $this->slider->hashed_id . '/slides/' . $this->slide->hashed_id, [
                 'name' => 'slide',
                 'status' => 'active',
-                'content' => 'html'
+                'content' => 'html',
             ]);
 
             $response->assertDontSee('The given data was invalid')
@@ -140,7 +144,7 @@ class SlidesTest extends TestCase
 
             $this->assertDatabaseHas('slides', [
                 'name' => $this->slide->name,
-                'slider_id' => $this->slide->slider_id
+                'slider_id' => $this->slide->slider_id,
             ]);
         }
         $this->assertTrue(true);
@@ -155,7 +159,6 @@ class SlidesTest extends TestCase
 
             $this->isSoftDeletableModel(Slide::class);
             $response->assertStatus(200)->assertSeeText('Slide has been deleted successfully.');
-
         }
         $this->assertTrue(true);
     }
