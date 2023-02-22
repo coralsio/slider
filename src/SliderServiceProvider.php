@@ -27,7 +27,6 @@ class SliderServiceProvider extends BasePackageServiceProvider
      *
      * @return void
      */
-
     public function bootPackage()
     {
         // Load view
@@ -56,7 +55,6 @@ class SliderServiceProvider extends BasePackageServiceProvider
         $this->app->register(SliderRouteServiceProvider::class);
         $this->app->register(SliderAuthServiceProvider::class);
         $this->app->register(SliderObserverServiceProvider::class);
-
     }
 
     public function registerShortcode()
