@@ -2,6 +2,7 @@
 
 namespace Corals\Modules\Slider;
 
+use Corals\Foundation\Providers\BasePackageServiceProvider;
 use Corals\Modules\Slider\Models\Slide;
 use Corals\Modules\Slider\Models\Slider;
 use Corals\Modules\Slider\Providers\SliderAuthServiceProvider;
@@ -9,11 +10,17 @@ use Corals\Modules\Slider\Providers\SliderObserverServiceProvider;
 use Corals\Modules\Slider\Providers\SliderRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
 use Corals\Settings\Facades\Settings;
-use Illuminate\Support\ServiceProvider;
 
-class SliderServiceProvider extends ServiceProvider
+class SliderServiceProvider extends BasePackageServiceProvider
 {
+    /**
+     * @var
+     */
     protected $defer = true;
+    /**
+     * @var
+     */
+    protected $packageCode = 'corals-cms-slider';
 
     /**
      * Bootstrap the application events.
@@ -21,7 +28,7 @@ class SliderServiceProvider extends ServiceProvider
      * @return void
      */
 
-    public function boot()
+    public function bootPackage()
     {
         // Load view
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'Slider');
@@ -35,7 +42,6 @@ class SliderServiceProvider extends ServiceProvider
         $this->registerShortcode();
 
         $this->registerCustomFieldsModels();
-        $this->registerModulesPackages();
     }
 
     /**
@@ -43,7 +49,7 @@ class SliderServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function registerPackage()
     {
         $this->mergeConfigFrom(__DIR__ . '/config/slider.php', 'slider');
 
@@ -82,7 +88,7 @@ class SliderServiceProvider extends ServiceProvider
         Settings::addCustomFieldModel(Slide::class);
     }
 
-    protected function registerModulesPackages()
+    public function registerModulesPackages()
     {
         Modules::addModulesPackages('corals/slider');
     }
