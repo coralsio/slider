@@ -6,7 +6,7 @@
     "description": "Create Images, Video and Html Slides for corals cms",
     "namespace": "Corals\\Modules\\Slider\\",
     "provider": "SliderServiceProvider",
-    "version": "3.0",
+    "version": "10.0.0",
     "load_order": "0",
     "folder": "Slider",
     "autoload": "psr-4",
