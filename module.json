@@ -12,8 +12,8 @@
     "autoload": "psr-4",
     "icon": "fa fa-clone",
     "require": {
-        "corals-foundation": "^6.0",
+        "corals-foundation": "^10.0.0",
         "corals-cms": "^10.0.0",
-        "corals-settings": "^5.0"
+        "corals-settings": "^10.0.0"
     }
 }
